@@ -1,0 +1,2 @@
+source /home/biu/courses/MCU-v2_K26.1_Assignment/Exercise_03_GPIORegisterLevelProgramming/GPIO_EXAMPLES/build/gdbinit/symbols
+source /home/biu/courses/MCU-v2_K26.1_Assignment/Exercise_03_GPIORegisterLevelProgramming/GPIO_EXAMPLES/build/gdbinit/connect
