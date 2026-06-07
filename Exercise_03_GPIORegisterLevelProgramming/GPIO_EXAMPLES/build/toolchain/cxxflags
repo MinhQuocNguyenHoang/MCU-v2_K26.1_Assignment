@@ -1,6 +1,0 @@
--mlongcalls
--fno-builtin-memcpy
--fno-builtin-memset
--fno-builtin-bzero
-"-specs=/home/biu/courses/MCU-v2_K26.1_Assignment/Exercise_03_GPIORegisterLevelProgramming/GPIO_EXAMPLES/build/specs/picolibc.specs"
--fno-rtti
