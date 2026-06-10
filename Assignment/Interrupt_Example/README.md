@@ -66,12 +66,9 @@ Thay `/dev/ttyUSB0` bằng cổng serial thực tế của board.
 
 ## Kết quả mong đợi
 
-LED nháy chậm ở lần khởi động đầu tiên. Mỗi lần nhấn nút, LED nháy nhanh hơn; sau mức nhanh nhất, tốc độ quay lại giá trị ban đầu. Serial monitor liên tục hiển thị:
-
-```text
-LED ON
-LED OFF
-```
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/0c90ab8f-943f-47d8-a4fa-02b56c274e39" alt="Blynk LED" height="200"></video>
+</div>
 
 ## Lưu ý
 
