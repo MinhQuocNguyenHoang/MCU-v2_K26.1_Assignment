@@ -46,7 +46,7 @@ static void IRAM_ATTR gpio_isr_handler(void* arg){
     if(status & (1UL << Button_GPIO)){
         GPIO_STATUS_W1TC_REG = (1UL << Button_GPIO);
         delay_ms -= 100;
-        if(delay_ms < 50){
+        if(delay_ms < 100){
             delay_ms = 1000;
         }
     }

@@ -36,7 +36,7 @@ Code không bật pull-up nội, vì vậy GPIO11 cần điện trở kéo lên 
 2. GPIO11 được cấu hình input và nhận ngắt cạnh xuống.
 3. Khi nhấn nút, tín hiệu GPIO11 chuyển từ HIGH xuống LOW và gọi ISR.
 4. ISR xóa cờ ngắt, sau đó giảm `delay_ms` đi 100 ms.
-5. Khi delay nhỏ hơn 50 ms, giá trị được đưa về 1000 ms.
+5. Khi delay nhỏ hơn 100 ms, giá trị được đưa về 1000 ms.
 
 Tốc độ LED thay đổi theo chuỗi `1000, 900, 800, ... 100, 1000` ms cho mỗi trạng thái ON hoặc OFF.
 
