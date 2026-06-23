@@ -8,6 +8,7 @@ Repository lưu các bài tập lập trình vi điều khiển trên **ESP32-S3
 | --- | --- |
 | [GPIO Example](Assignment/Gpio_Example/) | Cấu hình GPIO12 làm output và nháy LED mỗi giây bằng thanh ghi GPIO. |
 | [Interrupt Example](Assignment/Interrupt_Example/) | Bắt ngắt cạnh xuống từ nút nhấn GPIO11 để thay đổi tốc độ nháy LED GPIO12. |
+| [UART LED Control](Assignment/UART_LED_Control/) | Nhận lệnh từ PC qua UART (PuTTY/Hercules), điều khiển LED thường và RGB LED bằng chuỗi lệnh ASCII. |
 | [So sánh CISC và RISC](Assignment/Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md) | Phân tích đặc điểm, ưu nhược điểm và ứng dụng của hai kiến trúc tập lệnh CISC và RISC. |
 
 ## Phần cứng và công cụ
@@ -44,6 +45,7 @@ Thay `/dev/ttyUSB0` bằng cổng serial của board. Nhấn `Ctrl+]` để tho�
 ├── Assignment/
 │   ├── Gpio_Example/
 │   ├── Interrupt_Example/
+│   ├── UART_LED_Control/
 │   └── Research_CISCV_RISCV/
 │       └── bao_cao_so_sanh_cisc_risc.md
 └── document/
