@@ -21,7 +21,16 @@ Thư mục: [`Interrupt_Example`](Interrupt_Example/)
 - Cấu hình ngắt cạnh xuống trực tiếp trên thanh ghi GPIO.
 - Mỗi lần nhấn nút giảm thời gian delay 100 ms; sau khi xuống dưới 50 ms, delay trở về 1000 ms.
 
-### 3. Nghiên cứu kiến trúc CISC và RISC
+### 3. UART LED Control
+
+Thư mục: [`UART_LED_Control`](UART_LED_Control/)
+
+- Cấu hình GPIO12 (LED thường) và GPIO13/14/15 (RGB LED) làm output ở cấp thanh ghi.
+- Cấu hình UART0 (115200, 8N1) dùng ESP-IDF `uart_driver_install()` với ngắt FIFO nội bộ.
+- Nhận lệnh từ PC qua PuTTY / Hercules, phân tích chuỗi và điều khiển LED tương ứng.
+- Tập lệnh: `LED_ON/OFF`, `RED_ON/OFF`, `GREEN_ON/OFF`, `BLUE_ON/OFF`.
+
+### 4. Nghiên cứu kiến trúc CISC và RISC
 
 Báo cáo: [`Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md`](Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md)
 
