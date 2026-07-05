@@ -30,9 +30,19 @@ Thư mục: [`UART_LED_Control`](UART_LED_Control/)
 - Nhận lệnh từ PC qua PuTTY / Hercules, phân tích chuỗi và điều khiển LED tương ứng.
 - Tập lệnh: `LED_ON/OFF`, `RED_ON/OFF`, `GREEN_ON/OFF`, `BLUE_ON/OFF`.
 
-### 4. Nghiên cứu kiến trúc CISC và RISC
+### 4. I2C Environment Monitor (DHT20 & SSD1306)
+
+Thư mục: [`I2C_LCD_DHT20`](I2C_LCD_DHT20/)
+
+- Triển khai I2C phần mềm (Software I2C) ở mức thanh ghi điều khiển cả cảm biến DHT20 và màn hình SSD1306 trên cùng một bus.
+- Đọc nhiệt độ và độ ẩm định kỳ mỗi 5 giây.
+- Cấu hình ngắt ngoài (falling-edge interrupt) trên nút nhấn rời (GPIO4) để kích hoạt đọc cảm biến tức thời và đếm số lần nhấn nút hiển thị lên màn hình.
+- Sử dụng bảng font 5x8 tùy chỉnh hiển thị thông tin trực quan lên màn hình OLED.
+
+### 5. Nghiên cứu kiến trúc CISC và RISC
 
 Báo cáo: [`Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md`](Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md)
+
 
 - Giới thiệu đặc điểm của kiến trúc CISC và RISC.
 - Phân tích ưu điểm, nhược điểm và so sánh theo các tiêu chí chính.
