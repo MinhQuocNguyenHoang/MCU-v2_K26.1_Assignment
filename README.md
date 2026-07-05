@@ -9,13 +9,17 @@ Repository lưu các bài tập lập trình vi điều khiển trên **ESP32-S3
 | [GPIO Example](Assignment/Gpio_Example/) | Cấu hình GPIO12 làm output và nháy LED mỗi giây bằng thanh ghi GPIO. |
 | [Interrupt Example](Assignment/Interrupt_Example/) | Bắt ngắt cạnh xuống từ nút nhấn GPIO11 để thay đổi tốc độ nháy LED GPIO12. |
 | [UART LED Control](Assignment/UART_LED_Control/) | Nhận lệnh từ PC qua UART (PuTTY/Hercules), điều khiển LED thường và RGB LED bằng chuỗi lệnh ASCII. |
+| [I2C Environment Monitor](Assignment/I2C_LCD_DHT20/) | Đọc nhiệt độ/độ ẩm từ DHT20 và hiển thị lên LCD SSD1306 dùng Software I2C cấp thanh ghi, hỗ trợ ngắt nút nhấn rời GPIO4. |
 | [So sánh CISC và RISC](Assignment/Research_CISCV_RISCV/bao_cao_so_sanh_cisc_risc.md) | Phân tích đặc điểm, ưu nhược điểm và ứng dụng của hai kiến trúc tập lệnh CISC và RISC. |
+
 
 ## Phần cứng và công cụ
 
 - Board ESP32-S3-DevKitC-1
+- Cảm biến nhiệt độ và độ ẩm DHT20 (giao tiếp I2C)
+- Màn hình OLED SSD1306 128x64 (giao tiếp I2C)
 - LED, điện trở hạn dòng 220-330 ohm
-- Nút nhấn và điện trở kéo lên 10 kohm
+- Nút nhấn rời và điện trở kéo lên 10 kohm
 - Cáp USB có khả năng truyền dữ liệu
 - ESP-IDF và toolchain dành cho ESP32-S3
 
@@ -46,6 +50,7 @@ Thay `/dev/ttyUSB0` bằng cổng serial của board. Nhấn `Ctrl+]` để tho�
 │   ├── Gpio_Example/
 │   ├── Interrupt_Example/
 │   ├── UART_LED_Control/
+│   ├── I2C_LCD_DHT20/
 │   └── Research_CISCV_RISCV/
 │       └── bao_cao_so_sanh_cisc_risc.md
 └── document/
